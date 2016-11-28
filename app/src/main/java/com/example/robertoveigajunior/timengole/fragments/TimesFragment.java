@@ -69,7 +69,7 @@ public class TimesFragment extends Fragment implements Callback<List<Time>> {
                 .build();
 
         TimeAPI api = retrofit.create(TimeAPI.class);
-        Call<List<Time>> call = api.findBy(tipo);
+        Call<List<Time>> call = api.getTimeJSON();
         call.enqueue(this);
 
 

@@ -20,7 +20,7 @@
 
 
             <ImageView
-                android:id="@+id/imagemCarro"
+                android:id="@+id/imagemTime"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"

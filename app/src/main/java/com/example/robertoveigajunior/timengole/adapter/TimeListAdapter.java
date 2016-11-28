@@ -43,7 +43,7 @@ public class TimeListAdapter extends RecyclerView.Adapter<TimeListAdapter.TimesV
     public void onBindViewHolder(final TimesViewHolder holder, final int position) {
         Time c = times.get(position);
         holder.tvNome.setText(c.getNome());
-        holder.tvDescricao.setText(c.getAnoFundacao());
+        holder.tvDescricao.setText(String.valueOf(c.getAnoFundacao()));
         //get image data and show
         Picasso.with(context)
                 .load(c.getEscudo())

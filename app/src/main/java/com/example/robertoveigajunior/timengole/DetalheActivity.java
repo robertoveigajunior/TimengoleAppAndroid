@@ -18,13 +18,11 @@ public class DetalheActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detalhe);
 
-        imagem = (ImageView) findViewById(R.id.imagemCarro);
+        imagem = (ImageView) findViewById(R.id.imagemTime);
         desc = (TextView)findViewById(R.id.desc);
 
-        if(getIntent() != null) {
             Time time = getIntent().getParcelableExtra("time");
             Picasso.with(this).load(time.getEscudo()).placeholder(R.mipmap.ic_launcher).into(imagem);
-            desc.setText(time.getAnoFundacao());
-        }
+            desc.setText(time.getNome());
     }
 }
